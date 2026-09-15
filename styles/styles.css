@@ -70,7 +70,7 @@ aside {
     padding: 20px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px #808080;
     text-align: center;
     border: none;
     transition: transform 0.3s ease;
