@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #1e3a5f;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #dc143c;
+}
+
+nav a:active {
+    color: #ffc0cb;
+}
+
+main {
+    max-width: 840px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    color: #800080;
+    text-shadow: 2px 2px 4px #d2691e;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+main h1:hover {
+    color: #ffc0cb;
+}
+
+h1 {
+    color: #1e3a5f;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #7b68ee;
+}
+
+main p {
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+main:hover p {
+    color: #da70d6;
+}
+
+aside {
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+aside:hover {
+    transform: translateY(-5px);
+
+}
+
+aside h2 {
+    color: #1e3a5f;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #5f9ea0;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+aside:hover h2 {
+    color: #ffc0cb;
+}
+
+aside img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+main img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 10px;
+    color: #8a2be2;
+    text-shadow: 2px 2px 4px #4169e1;
+}
+
+aside p {
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+aside:hover p {
+    color: #cd5c5c;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e3a5f;
+    color: #4b0082;
+    text-shadow: 2px 2px 4px #ff0000;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+footer p {
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+footer:hover p {
+    color: #ffc0cb;
+}
