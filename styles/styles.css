@@ -68,9 +68,9 @@ aside {
     width: 350px;
     margin: 30px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #faebd7;
     border-radius: 15px;
-    box-shadow: 0 4px 15px red;
+    box-shadow: 0 4px 15px rgb(221, 105, 105);
     text-align: center;
     border: none;
     transition: transform 0.3s ease;
@@ -97,23 +97,23 @@ aside img {
     width: 200px;
     max-width: 250px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 main img {
     padding: 10px;
     width: 150px;
     height: 200px;
-    border: #1e3a5f;
-    box-shadow: 10px 5px 5px royalblue;
-    border-radius: 10px;
+    border: #ffc0cb;
+    box-shadow: 10px 2px 2px rgb(157, 175, 228);
+    border-radius: 5px;
 }
 
 p {
     margin-top: 10px;
     padding: 0;
     color: #8a2be2;
-    text-shadow: 2px 2px 4px #4169e1;
+    text-shadow: 2px 2px 4px #ffc0cb;
 }
 
 aside p {
@@ -132,7 +132,7 @@ footer {
     text-align: center;
     background-color: #1e3a5f;
     color: #4b0082;
-    text-shadow: 2px 2px 4px #ff0000;
+    text-shadow: 2px 2px 2px #ff0000;
     transition: color 0.2s ease-in-out;
     cursor: pointer;
 }
