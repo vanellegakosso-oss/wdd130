@@ -11,32 +11,53 @@ body {
     line-height: 1.6;
 }
 
+header,
+.grid,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 nav {
-    background-color: #1e3a5f;
-    padding: 15px;
+    background-color: #4682b4;
+    padding: 1rem;
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1e3a5f;
 }
 
 nav a {
-    color: white;
-    padding: 10px;
     display: block;
+    padding: 0.5rem;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 nav a:hover {
-    color: #dc143c;
+    color: #ff4500;
 }
 
 nav a:active {
     color: #ffc0cb;
 }
 
+.grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 main {
-    max-width: 840px;
-    margin: 30px auto;
+    order: 1;
     padding: 20px;
     text-align: center;
     color: #800080;
@@ -45,14 +66,18 @@ main {
     cursor: pointer;
 }
 
-main h1:hover {
-    color: #ffc0cb;
+aside {
+    order: 2;
+    max-width: 100%;
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    color: #1e3a5f;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #7b68ee;
+aside:hover {
+    transform: translateY(-5px);
 }
 
 main p {
@@ -64,21 +89,15 @@ main:hover p {
     color: #da70d6;
 }
 
-aside {
-    width: 350px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #faebd7;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgb(221, 105, 105);
-    text-align: center;
-    border: none;
-    transition: transform 0.3s ease;
+h1 {
+    color: #1e3a5f;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #7b68ee;
+    border-bottom: 2px solid #1e3a5f;
 }
 
-aside:hover {
-    transform: translateY(-5px);
-
+main h1:hover {
+    color: #ffc0cb;
 }
 
 aside h2 {
@@ -89,31 +108,33 @@ aside h2 {
     cursor: pointer;
 }
 
-aside:hover h2 {
-    color: #ffc0cb;
-}
-
-aside img {
-    width: 200px;
-    max-width: 250px;
-    height: auto;
-    border-radius: 5px;
-}
-
 main img {
     padding: 10px;
     width: 150px;
-    height: 200px;
-    border: #ffc0cb;
-    box-shadow: 10px 2px 2px rgb(157, 175, 228);
+    height: auto;
     border-radius: 5px;
+    box-shadow: 10px 2px 2px rgb(157, 175, 228);
+    position: right;
+}
+
+aside:hover h2 {
+    color: #da70d6;
+}
+
+aside img {
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 10px 2px 2px rgb(157, 175, 228);
+    position: right;
 }
 
 p {
     margin-top: 10px;
     padding: 0;
     color: #8a2be2;
-    text-shadow: 2px 2px 4px #ffc0cb;
+    text-shadow: 2px 2px 2px #ffc0cb;
 }
 
 aside p {
@@ -126,8 +147,8 @@ aside:hover p {
 }
 
 footer {
-    border-top: 10PX;
     margin-top: 40px;
+    border-top: 10PX;
     padding: 20px;
     text-align: center;
     background-color: #1e3a5f;
