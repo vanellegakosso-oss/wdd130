@@ -12,11 +12,13 @@
   box-sizing: border-box;
 }
 
+/* 2. HEADER UTILISANT CSS GRID */
 header {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
   border-bottom: 3px solid var(--primary-color);
   background-color: var(--bg-color);
@@ -34,8 +36,10 @@ header > img:hover {
   cursor: pointer;
 }
 
+/* 3. NAV UTILISANT FLEXBOX */
 nav {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
   gap: 15px;
@@ -50,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  color: aquamarine;
+  color: #004d40;
   transform: translateY(-2px);
 }
 
@@ -111,7 +115,7 @@ main {
   width: 90%;
   text-align: center;
   color: var(--accent-color);
-  background-color: rgba(200, 238, 232, 0.85);
+  background-color: rgba(200, 238, 232, 0.95);
   padding: 12px;
   font-size: 2rem;
   z-index: 10;
@@ -134,7 +138,7 @@ main {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   color: var(--text-color);
   z-index: 10;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -220,7 +224,7 @@ main {
 
 .adventures h2:hover {
   transform: translateX(5px);
-  color: #ec2ff3;
+  color: #8b008b;
   cursor: pointer;
 }
 
@@ -255,7 +259,7 @@ main {
 
 .adventures-grid img:hover {
   transform: scale(1.08) translateY(-4px);
-  border-color: #ec2ff3;
+  border-color: #8b008b;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -271,10 +275,11 @@ main {
 
 .adventures-grid figcaption:hover {
   transform: translateY(-2px);
-  color: #ec2ff3;
+  color: #8b008b;
   cursor: pointer;
 }
 
+/* 5. FOOTER STYLISÉ À DROITE */
 footer {
   display: flex;
   justify-content: space-between;
@@ -292,7 +297,7 @@ footer p {
 
 footer p:hover {
   transform: translateY(-2px);
-  color: #ec2ff3;
+  color: var(--bg-color);
   cursor: pointer;
 }
 
@@ -315,7 +320,7 @@ footer p:hover {
 
 .socialmedia a:hover {
   transform: scale(1.1) translateY(-3px);
-  border-color: #ec2ff3;
+  border-color: var(--bg-color);
 }
 
 .socialmedia img {
@@ -333,8 +338,13 @@ footer p:hover {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 15px;
+  }
+
+  nav {
+    justify-content: center;
   }
 
   .hero > img,
