@@ -25,11 +25,13 @@ header {
 header > img {
   width: 75px;
   background-color: var(--primary-color);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 header > img:hover {
-  transform: scale(1.08) translateY(-4px);
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 nav {
@@ -40,19 +42,20 @@ nav {
 }
 
 nav a {
-  color: #000000;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   color: aquamarine;
+  transform: translateY(-2px);
 }
 
 nav a:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 main {
@@ -64,27 +67,27 @@ main {
 .hero {
   position: relative;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   padding: 20px;
   background-color: rgba(194, 209, 235, 0.85);
-  width: 100%;
   margin-bottom: 30px;
 }
 
 .hero > img {
   width: 48%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero > img:hover {
-  transform: scale(1.05) translateY(-2px);
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .hero iframe {
@@ -92,89 +95,82 @@ main {
   height: 300px;
   border-radius: 8px;
   border: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero iframe:hover {
-  transform: translateY(-4px);
-}
-
-.hero iframe:active {
-  transform: scale(0.96) translateY(2px);
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero h1 {
   position: absolute;
   top: 20px;
-  left: 20px;
-  width: calc(100% - 40px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   text-align: center;
   color: var(--accent-color);
   background-color: rgba(200, 238, 232, 0.85);
-  padding: 10px;
-  margin-top: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+  padding: 12px;
+  font-size: 2rem;
+  z-index: 10;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero h1:hover {
-  transform: scale(1.05) translateY(-2px);
+  transform: translateX(-50%) translateY(-3px) scale(1.01);
   color: var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-
-.hero h1:active {
-  transform: scale(0.98);
-  color: #ffc0cb;
 }
 
 .hero article {
   position: absolute;
   bottom: 20px;
-  right: 20px;
-  width: calc(100% - 40px);
+  left: 5%;
+  width: 90%;
   display: flex;
   align-items: center;
-  text-align: justify;
-  color: rgb(59, 35, 6);
   gap: 20px;
-  padding: 15px;
-  background-color: rgba(194, 209, 236, 0.85);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease, text-shadow 0.3s ease;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--text-color);
+  z-index: 10;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero article:hover {
-  transform: scale(1.02) translateY(-3px);
-  text-shadow: 2px 2px 4px #d2691e;
-  cursor: pointer;
-}
-
-.hero article:active {
-  transform: scale(0.98);
-  color: #ffc0cb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero article img {
   float: right;
   width: 200px;
-  height: 125px;
-  object-fit: cover;
-  flex-shrink: 0;
-  margin-left: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero article img:hover {
-  transform: scale(1.08) translateY(-4px);
-}
-
-.hero article img:active {
-  transform: scale(0.98);
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .hero article p {
   margin: 0;
-  line-height: 1.4;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero article p:hover {
+  transform: translateY(-2px);
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 .rafting {
@@ -186,30 +182,26 @@ main {
   color: var(--secondary-color);
   font-size: 28px;
   margin-bottom: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .rafting h2:hover {
-  transform: scale(1.05) translateY(-2px);
-  text-shadow: 2px 2px 4px #d2691e;
+  transform: translateX(5px);
+  color: var(--primary-color);
   cursor: pointer;
-}
-
-.rafting h2:active {
-  transform: scale(0.98);
 }
 
 .rafting p {
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
-  color: #111111;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+  color: var(--text-color);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .rafting p:hover {
-  transform: scale(1.08) translateY(-4px);
-  color: #ec2ff3; 
+  transform: translateY(-2px);
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -223,17 +215,13 @@ main {
   font-size: 24px;
   margin-bottom: 15px;
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .adventures h2:hover {
-  transform: scale(1.05) translateY(-2px);
-  text-shadow: 2px 2px 4px #d2691e;
+  transform: translateX(5px);
+  color: #ec2ff3;
   cursor: pointer;
-}
-
-.adventures h2:active {
-  transform: scale(0.98);
 }
 
 .adventures-grid {
@@ -249,6 +237,11 @@ main {
   align-items: center;
   text-align: center;
   margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.adventures-grid figure:hover {
+  transform: translateY(-6px);
 }
 
 .adventures-grid img {
@@ -257,17 +250,14 @@ main {
   object-fit: cover;
   border: 2px solid var(--primary-color);
   border-radius: 4px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
-  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .adventures-grid img:hover {
   transform: scale(1.08) translateY(-4px);
   border-color: #ec2ff3;
-}
-
-.adventures-grid img:active {
-  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .adventures-grid figcaption {
@@ -276,16 +266,13 @@ main {
   font-weight: 400;
   color: var(--secondary-color);
   line-height: 1.2;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
-  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .adventures-grid figcaption:hover {
+  transform: translateY(-2px);
   color: #ec2ff3;
-}
-
-.adventures-grid figcaption:active {
-  color: #ffc0cb;
+  cursor: pointer;
 }
 
 footer {
@@ -300,17 +287,13 @@ footer {
 footer p {
   margin: 0;
   color: #ffffff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 footer p:hover {
-  transform: scale(1.08) translateY(-4px);
-  color: #ec2ff3; 
+  transform: translateY(-2px);
+  color: #ec2ff3;
   cursor: pointer;
-}
-
-footer p:active {
-  transform: scale(0.98);
 }
 
 .socialmedia {
@@ -327,16 +310,12 @@ footer p:active {
   border-radius: 4px;
   padding: 2px;
   background-color: #ffffff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .socialmedia a:hover {
-  transform: scale(1.08) translateY(-4px);
+  transform: scale(1.1) translateY(-3px);
   border-color: #ec2ff3;
-}
-
-.socialmedia a:active {
-  transform: scale(0.98);
 }
 
 .socialmedia img {
@@ -344,7 +323,12 @@ footer p:active {
   height: 35px;
   object-fit: contain;
   display: block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -353,25 +337,29 @@ footer p:active {
     gap: 15px;
   }
 
-  .hero {
-    flex-direction: column;
-  }
-
   .hero > img,
   .hero iframe {
     width: 100%;
   }
 
-  .adventures-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .hero article {
+    position: static;
+    width: 100%;
     flex-direction: column;
   }
 
-  .hero article img {
+  .hero h1 {
+    position: static;
+    transform: none;
     width: 100%;
-    height: auto;
+  }
+
+  .hero article img {
+    float: none;
+    width: 100%;
+  }
+
+  .adventures-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
