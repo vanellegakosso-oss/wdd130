@@ -1,0 +1,9 @@
+//# allFunctionsCalledOnLoad
+loaded_h_0(function(_){var window=this;
+_.sZu=function(){var a=_.hd().host.match("google(?:\\.[a-z]{2,3}){1,2}$");return a?a[0]:null};
+_.Isr=_.x("IQw9J",[]);
+_.v("IQw9J");
+_.fs(_.Isr,class extends _.ds{constructor(a){super(a.La);if(a=_.da.google.pmc.foot){if(a.dv!==void 0&&a.dv!=="")try{_.pf.set("DV",a.dv,{maxAge:600})}catch(b){_.Ze(b,{Ve:{src:"foot"}})}if(a.dvct!==void 0&&a.dvct!=="")try{_.pf.set("CONSISTENCY",a.dvct,{maxAge:600,domain:_.sZu()})}catch(b){_.Ze(b,{Ve:{src:"foot"}})}}}});
+_.w();
+});
+// Google Inc.
