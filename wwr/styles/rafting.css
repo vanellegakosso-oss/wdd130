@@ -197,6 +197,7 @@ main {
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
+  text-align: justify;
   color: var(--text-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -219,29 +220,46 @@ main {
   text-align: left;
   transition: transform 0.3s ease, color 0.3s ease;
 }
+.adventures-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    align-items: flex-start;
+}
 
+.adventures-grid img {
+    width: 19%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
 .adventures h2:hover {
   transform: translateX(5px);
   color: #8b008b;
   cursor: pointer;
 }
-
-.adventures-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  width: 100%;
-}
-
-.adventures-grid figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.adventures p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
   margin: 0;
-  transition: transform 0.3s ease;
+  color: var(--text-color);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.adventures p:hover {
+  transform: translateY(-2px);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.adventures-grid figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
 .adventures-grid figure:hover {
   transform: translateY(-6px);
 }
@@ -260,11 +278,11 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-
+  
 .adventures-grid figcaption {
-  margin-top: 5px;
-  font-size: 16px;
-  font-weight: 400;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
   color: var(--secondary-color);
   line-height: 1.2;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -275,8 +293,6 @@ main {
   color: #8b008b;
   cursor: pointer;
 }
-
-/* 5. FOOTER STYLISÉ À DROITE */
 footer {
   display: flex;
   justify-content: space-between;
