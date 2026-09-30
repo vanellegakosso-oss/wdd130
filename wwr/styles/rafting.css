@@ -245,7 +245,6 @@ main {
 .adventures-grid figure:hover {
   transform: translateY(-6px);
 }
-
 .adventures-grid img {
   width: 100%;
   height: 100px;
