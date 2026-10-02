@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <main class="box">
+        <h1> ✔ Basic HTML and CSS Quiz </h1>
+        <form class="box">
+            <div class="quiz-item box">
+                <label for="q1">1.  What does BYU stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div class="quiz-item box">
+                <label for="q2">2. What is your level?</label>
+                <select id="q2" name="q2">
+                    <option value="" selected disabled>Choose one...</option>
+                    <option value="a">A.English Connect3 </option>
+                    <option value="b">B. Pathway Connect </option>
+                    <option value="c">C. University</option>
+                </select>
+            </div>
+            <div class="quiz-item box">
+                <label for="q3">3. How long is a term?</label>
+                <input type="number"id="q1" name="q1">
+                <code class="box">Weeks</code>
+            </div>
+            <div class="quiz-item box">
+                <label for="q4">4. What will you learn next term?</label>
+                <textarea id="q1" name="q1"></textarea>
+            <div class="quiz-item box">
+                <label for="q5">5. What does BYU Pathway mean for you?</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+            <button Type="submit"> Submit quiz</button>
+        </form>
+    </main>
+    
+</body>
+</html>
