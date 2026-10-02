@@ -1,118 +1,35 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<main>
+    <h1>River Rush Rafting</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description"
-      content="Do you have questions about our white water rafting trips or need help with a reservation? Contact the River Rush Rafting team today.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | River Rush Rafting</title>
-    <meta name="author" content="Vanelle GAKOSSO">
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+    <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
 
-<body>
+        <label for="useremail">Email Address:</label>
+        <input type="email" id="useremail" name="useremail" required>
 
-    <header>
-        <img src="images/logo.png" alt="River Rush Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Contact Us</h1>
-
-        <form action="#" method="post">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
-
-            <label for="useremail">Email Address:</label>
-            <input type="email" id="useremail" name="useremail" required>
-
-            <fieldset>
-                <legend>Purpose of Message:</legend>
-                <label for="general">
-                    <input type="radio" id="general" name="purpose" value="general" checked> General
-                    Inquiry
-                </label>
-                <label for="reservation">
-                    <input type="radio" id="reservation" name="purpose" value="reservation">
-                    Reservation
-                </label>
-                <label for="website">
-                    <input type="radio" id="website" name="purpose" value="website"> Website
-                    Suggestion
-                </label>
-            </fieldset>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <label for="subscribe">
-                <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Please subscribe
-                me
-                to the monthly newsletter
+        <fieldset>
+            <legend>Purpose of Message:</legend>
+            <label for="general">
+                <input type="radio" id="general" name="purpose" value="general" checked> General
+                Inquiry
             </label>
+            <label for="reservation">
+                <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
+            </label>
+            <label for="website">
+                <input type="radio" id="website" name="purpose" value="website"> Website Suggestion
+            </label>
+        </fieldset>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </main>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-    <section class="employees">
-        <h2>We Are Here to Serve You</h2>
-        <div class="employee-grid">
-            <figure>
-                <img src="images/manager.jpg" alt="Sofia PETER, General Manager">
-                <figcaption>
-                    <strong>Sofia PETER – General Manager</strong>
-                    <p>Sofia manages daily work, staff schedules, and customer service to make
-                        sure every trip runs smoothly.</p>
-                </figcaption>
-            </figure>
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Please subscribe me
+            to the monthly newsletter
+        </label>
 
-            <figure>
-                <img src="images/coach.jpg" alt="Marcus LANDE, Coach">
-                <figcaption>
-                    <strong>Marcus LANDE – Coach</strong>
-                    <p>Marcus leads hands-on paddling workshops and training sessions for guests
-                        to help them feel confident.</p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/monitor.jpg" alt="Helena BARBE, Monitor">
-                <figcaption>
-                    <strong>Helena BARBE – Monitor</strong>
-                    <p>Helena is in charge of river safety, inspecting gear before every trip to
-                        keep everyone safe.</p>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/guide.jpg" alt="Martina MARTES, River Guide">
-                <figcaption>
-                    <strong>Martina MARTES – River Guide</strong>
-                    <p>Martina leads raft trips down the river, steering through big waves while
-                        keeping guests entertained.</p>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 River Rush Rafting | Vanelle GAKOSSO</p>
-        <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Follow us on Facebook"></a>
-            <a href="#"><img src="images/youtube.png" alt="Watch our videos on YouTube"></a>
-            <a href="#"><img src="images/instagram.png" alt="Follow us on Instagram"></a>
-        </nav>
-    </footer>
-
-</body>
-
-</html>
+        <button type="submit">Send Message</button>
+    </form>
+</main>
