@@ -33,7 +33,7 @@ h2:active {
 }
 
 header {
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -267,7 +267,7 @@ button[type="submit"]:hover,
   padding: 20px;
   background-color: #f9f9f9;
   color: var(--text-color);
-  width: 100%;
+  width: auto;
 }
 
 .employee-grid {
